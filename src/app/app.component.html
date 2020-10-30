@@ -1,1 +1,13 @@
-App component
+<div style="display: flex;">
+  <div style="background-color: rosybrown; width: 25%; height: 300px;">
+    <app-leyout1 [username]="username"></app-leyout1>
+  </div>
+
+  <div style="background-color: lightgreen; width: 50%; height: 300px;">
+    <app-layout2 (onClick)="layout2Clicked()" [posts]="posts"></app-layout2>
+  </div>
+
+  <div style="background-color: royalblue; width: 25%; height: 300px;">
+    <app-layout3></app-layout3>
+  </div>
+</div>
